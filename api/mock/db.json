@@ -13,6 +13,38 @@
       "state": "Em andamento",
       "group": "Lazer",
       "expiration": "21/09/2022"
+    },
+    {
+      "title": "Primeira de todas",
+      "state": "Em Andamento",
+      "group": "Estudo",
+      "expiration": "2022-09-12",
+      "id": 2
+    },
+    {
+      "title": "Testar formato data",
+      "state": "Em Andamento",
+      "group": "Estudo",
+      "expiration": "2022-09-12",
+      "id": 3
+    }
+  ],
+  "grupo": [
+    {
+      "id": 0,
+      "nome": "Estudos"
+    },
+    {
+      "id": 1,
+      "nome": "Trabalho"
+    },
+    {
+      "id": 0,
+      "nome": "Lazer"
+    },
+    {
+      "id": 0,
+      "nome": "Financas"
     }
   ]
 }
