@@ -20,7 +20,7 @@
               v-model="state"
               :items="stateOptions"
               :rules="[(v) => !!v || 'state eh obrigatorio.']"
-              label="state"
+              label="State"
               required
             ></v-select>
 
@@ -29,12 +29,12 @@
               v-model="select"
               :items="items"
               :rules="[(v) => !!v || 'Item is required']"
-              label="Item"
+              label="Group"
               required
             ></v-select>
 
             <v-row>
-              <v-col cols="12" sm="6" md="4">
+              <v-col>
                 <v-menu
                   ref="menu"
                   v-model="menu"
@@ -47,7 +47,7 @@
                   <template v-slot:activator="{ on, attrs }">
                     <v-text-field
                       v-model="date"
-                      label="Data de expiracao"
+                      label="Expiration"
                       prepend-icon="mdi-calendar"
                       readonly
                       v-bind="attrs"

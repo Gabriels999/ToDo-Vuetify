@@ -37,16 +37,22 @@
       </v-chip-group>
     </v-card-text>
 
-    <v-card-actions>
+    <v-card-actions class="d-flex justify-space-between mb-6">
       <v-btn color="deep-purple lighten-2" text @click="reserve">
         Atualizar
       </v-btn>
+      <modal-delete :task="task" @exclui="confirma($event)"></modal-delete>
     </v-card-actions>
   </v-card>
 </template>
 
 <script>
+import ModalDelete from "./ModalDelete.vue";
+
 export default {
+  components: {
+    ModalDelete,
+  },
   props: ["task"],
   data: () => ({
     loading: false,
@@ -58,6 +64,9 @@ export default {
       this.loading = true;
 
       setTimeout(() => (this.loading = false), 2000);
+    },
+    confirma(event) {
+      this.$emit("exclui", event);
     },
   },
 };

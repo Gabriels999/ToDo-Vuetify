@@ -1,12 +1,12 @@
 <template>
-  <button-add :color="'red'" :icon="'mdi-plus'"></button-add>
+  <button-icon :color="'red'" :icon="'mdi-plus'"></button-icon>
 </template>
 
 <script>
-import ButtonAdd from "../components/ButtonAdd.vue";
+import ButtonIcon from "../components/ButtonIcon.vue";
 export default {
   components: {
-    ButtonAdd,
+    ButtonIcon,
   },
 };
 </script>

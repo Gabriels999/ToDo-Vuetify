@@ -22,10 +22,10 @@
       "id": 2
     },
     {
-      "title": "Testar formato data",
+      "title": "Teste data",
       "state": "Em Andamento",
       "group": "Estudo",
-      "expiration": "2022-09-12",
+      "expiration": "2022-09-15",
       "id": 3
     }
   ],
