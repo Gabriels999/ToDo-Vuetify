@@ -64,6 +64,7 @@ export default {
       this.loading = true;
 
       setTimeout(() => (this.loading = false), 2000);
+      this.$router.push(`/edit/${this.task.id}`);
     },
     confirma(event) {
       this.$emit("exclui", event);
