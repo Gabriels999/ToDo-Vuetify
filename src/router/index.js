@@ -4,6 +4,7 @@ import HomeView from "../views/HomeView.vue";
 import LoginView from "../views/LoginView.vue";
 import RegisterView from "../views/RegisterView.vue";
 import CreateTaskView from "../views/CreateTaskView.vue";
+import UpdateTaskView from "../views/UpdateTaskView.vue";
 import TesteView from "../views/TesteView.vue";
 
 Vue.use(VueRouter);
@@ -28,6 +29,11 @@ const routes = [
     path: "/create",
     name: "create",
     component: CreateTaskView,
+  },
+  {
+    path: "/edit",
+    name: "edit",
+    component: UpdateTaskView,
   },
   {
     path: "/teste",
