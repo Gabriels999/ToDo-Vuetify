@@ -99,7 +99,7 @@ export default {
 
     valid: true,
     title: "",
-    titleRules: [(v) => !!v || "title is required"],
+    titleRules: [(v) => !!v || "Titulo eh obrigatorio"],
     select: null,
     items: ["Trabalho", "Estudo", "Lazer", "Financas"],
     state: "Pendente",

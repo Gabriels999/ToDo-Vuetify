@@ -19,10 +19,10 @@
 </template>
 
 <script>
-import CardVuetify from "../components/CardVuetify.vue";
-import ButtonIcon from "../components/ButtonIcon.vue";
+import CardVuetify from "@/components/CardVuetify.vue";
+import ButtonIcon from "@/components/ButtonIcon.vue";
 
-import tasksApi from "../tasksApi.js";
+import tasksApi from "@/tasksApi.js";
 
 export default {
   components: {

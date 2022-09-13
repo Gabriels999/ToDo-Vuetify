@@ -3,9 +3,9 @@
 </template>
 
 <script>
-import TaskForm from "../components/TaskForm.vue";
+import TaskForm from "@/components/TaskForm.vue";
 
-import tasksApi from "../tasksApi.js";
+import tasksApi from "@/tasksApi.js";
 
 export default {
   components: {

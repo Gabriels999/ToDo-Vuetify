@@ -1,11 +1,11 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import HomeView from "../views/HomeView.vue";
-import LoginView from "../views/LoginView.vue";
-import RegisterView from "../views/RegisterView.vue";
-import CreateTaskView from "../views/CreateTaskView.vue";
-import UpdateTaskView from "../views/UpdateTaskView.vue";
-import TesteView from "../views/TesteView.vue";
+import HomeView from "@/views/HomeView.vue";
+import LoginView from "@/views/LoginView.vue";
+import RegisterView from "@/views/RegisterView.vue";
+import CreateTaskView from "@/views/CreateTaskView.vue";
+import UpdateTaskView from "@/views/UpdateTaskView.vue";
+import TesteView from "@/views/TesteView.vue";
 
 Vue.use(VueRouter);
 
@@ -31,7 +31,7 @@ const routes = [
     component: CreateTaskView,
   },
   {
-    path: "/edit",
+    path: "/edit/:id",
     name: "edit",
     component: UpdateTaskView,
   },

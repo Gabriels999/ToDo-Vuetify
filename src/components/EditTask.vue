@@ -97,7 +97,6 @@ export default {
       .toISOString()
       .substr(0, 10),
     menu: false,
-
     valid: true,
     title: "",
     titleRules: [(v) => !!v || "title is required"],
@@ -105,28 +104,31 @@ export default {
     items: ["Trabalho", "Estudo", "Lazer", "Financas"],
     state: "Pendente",
     stateOptions: ["Pendente", "Em Andamento", "Concluida"],
+    teste: "",
+    count: 0,
   }),
 
   methods: {
     salvar() {
-      let newTask = {
+      let editTask = {
         title: this.title,
         state: this.state,
         group: this.select,
         expiration: this.date,
       };
-      this.$emit("novaTarefa", newTask);
+      this.$emit("editaTarefa", editTask);
     },
     cancelar() {
       this.$refs.form.reset();
     },
   },
-  created() {
-    this.title = this.task.title;
-    this.state = this.task.state;
-    this.select = this.task.group;
-    this.date = this.task.expiration;
-    console.log(this.task);
+  watch: {
+    task() {
+      this.title = this.task.title;
+      this.state = this.task.state;
+      this.select = this.task.group;
+      this.date = this.task.expiration;
+    },
   },
 };
 </script>

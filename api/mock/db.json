@@ -1,31 +1,17 @@
 {
   "tasks": [
     {
-      "id": 0,
-      "title": "CRUD Vuetify",
-      "state": "Em andamento",
-      "group": "Estudos",
-      "expiration": "16/09/2022"
-    },
-    {
-      "id": 1,
-      "title": "Ir ao Cinema",
-      "state": "Em andamento",
-      "group": "Lazer",
-      "expiration": "21/09/2022"
-    },
-    {
-      "title": "Primeira de todas",
+      "title": "VitinhoTESTE",
       "state": "Em Andamento",
       "group": "Estudo",
       "expiration": "2022-09-12",
       "id": 2
     },
     {
-      "title": "Teste data",
+      "title": "Eh agorateste",
       "state": "Em Andamento",
-      "group": "Estudo",
-      "expiration": "2022-09-15",
+      "group": "Trabalho",
+      "expiration": "2022-09-13",
       "id": 3
     }
   ],

@@ -14,4 +14,7 @@ export default {
   deleteTask(taskId, cb) {
     axios.delete(`/tasks/${taskId}`).then((r) => cb(r.data));
   },
+  putTask(taskId, task, cb) {
+    axios.put(`/tasks/${taskId}`, task).then((r) => cb(r.data));
+  },
 };
