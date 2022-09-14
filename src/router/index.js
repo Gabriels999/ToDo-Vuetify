@@ -6,6 +6,7 @@ import RegisterView from "@/views/RegisterView.vue";
 import CreateTaskView from "@/views/CreateTaskView.vue";
 import UpdateTaskView from "@/views/UpdateTaskView.vue";
 import CreateGroupView from "@/views/CreateGroupView.vue";
+import SummaryView from "@/views/SummaryView.vue";
 import TesteView from "@/views/TesteView.vue";
 
 Vue.use(VueRouter);
@@ -15,6 +16,11 @@ const routes = [
     path: "/",
     name: "home",
     component: HomeView,
+  },
+  {
+    path: "/main",
+    name: "main",
+    component: SummaryView,
   },
   {
     path: "/login",

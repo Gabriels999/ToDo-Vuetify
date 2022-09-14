@@ -23,6 +23,7 @@
       :counter="10"
       label="Senha"
       required
+      type="password"
       @input="$v.password.$touch()"
       @blur="$v.password.$touch()"
     ></v-text-field>

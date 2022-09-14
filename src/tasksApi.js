@@ -18,12 +18,20 @@ export default {
   putTask(taskId, task, cb) {
     axios.put(`/tasks/${taskId}`, task).then((r) => cb(r.data));
   },
+
   // USERS
   createUser(user, cb) {
     axios.post("/users", user).then((r) => cb(r.data));
   },
+  getUsers(cb) {
+    axios.get("/users").then((r) => cb(r.data));
+  },
+
   // GROUPS
   createGroup(group, cb) {
     axios.post("/groups", group).then((r) => cb(r.data));
+  },
+  getGroups(cb) {
+    axios.get("/groups").then((r) => cb(r.data));
   },
 };

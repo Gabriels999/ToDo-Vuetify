@@ -14,6 +14,7 @@
       :error-messages="passwordErrors"
       :counter="10"
       label="Senha"
+      type="password"
       required
       @input="$v.password.$touch()"
       @blur="$v.password.$touch()"
@@ -64,7 +65,11 @@ export default {
 
   methods: {
     submit() {
-      this.$v.$touch();
+      const user = {
+        name: this.name,
+        password: this.password,
+      };
+      this.$emit("credentials", user);
     },
     clear() {
       this.$v.$reset();

@@ -6,7 +6,7 @@
         <v-col cols="sm">
           <v-card class="pa-4">
             <h2>Que bom ter voce por aqui de novo!</h2>
-            <login-form></login-form>
+            <login-form @credentials="abacate($event)"></login-form>
             <p class="mt-5">
               Primeira vez? Crie sua conta
               <router-link to="register">aqui</router-link>.
@@ -21,13 +21,45 @@
 <script>
 import LoginForm from "@/components/LoginForm.vue";
 
+import userApi from "@/tasksApi.js";
+
 export default {
   components: {
     LoginForm,
   },
   data() {
-    return {};
+    return {
+      users: [],
+      user: {},
+    };
   },
-  methods: {},
+  methods: {
+    abacate(event) {
+      userApi.getUsers((data) => (this.users = data));
+      this.user = event;
+    },
+    teste() {
+      let liberado = false;
+      for (let i = 0; i < this.users.length; i++) {
+        if (
+          this.users[i].name == this.user.name &&
+          this.users[i].password == this.user.password
+        ) {
+          console.log("credenciais certas!!!");
+          liberado = true;
+        }
+      }
+      if (liberado == true) {
+        this.$router.push({ name: "home" });
+      } else {
+        console.log("subir o toast informando erro");
+      }
+    },
+  },
+  watch: {
+    users() {
+      this.teste();
+    },
+  },
 };
 </script>
