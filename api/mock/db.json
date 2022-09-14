@@ -13,9 +13,16 @@
       "group": "Trabalho",
       "expiration": "2022-09-13",
       "id": 3
+    },
+    {
+      "title": "Testando",
+      "state": "Em Andamento",
+      "group": "Estudo",
+      "expiration": "2022-09-14",
+      "id": 4
     }
   ],
-  "grupo": [
+  "groups": [
     {
       "id": 0,
       "nome": "Estudos"
@@ -25,12 +32,42 @@
       "nome": "Trabalho"
     },
     {
-      "id": 0,
+      "id": 2,
       "nome": "Lazer"
     },
     {
-      "id": 0,
+      "id": 3,
       "nome": "Financas"
+    },
+    {
+      "Despesas": "",
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "id": 0,
+      "name": "jj",
+      "email": "j@j.com",
+      "password": "apimock"
+    },
+    {
+      "name": "gabriel",
+      "password": "123",
+      "email": "g@g.com",
+      "id": 1
+    },
+    {
+      "name": "teste",
+      "password": "123",
+      "email": "teste@t.com",
+      "id": 2
+    },
+    {
+      "name": "testea",
+      "password": "123",
+      "email": "t@t.com",
+      "id": 3
     }
   ]
 }

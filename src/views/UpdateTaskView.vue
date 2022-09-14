@@ -26,7 +26,7 @@ export default {
     atualizaTarefa(event) {
       console.log(event, this.id);
       tasksApi.putTask(this.id, event, () => {
-        this.$router.push("/");
+        this.$router.push({ name: "home" });
       });
     },
   },

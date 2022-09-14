@@ -102,7 +102,12 @@ export default {
 
   methods: {
     submit() {
-      this.$v.$touch();
+      const newUser = {
+        name: this.name,
+        password: this.password,
+        email: this.email,
+      };
+      this.$emit("createUser", newUser);
     },
     clear() {
       this.$v.$reset();

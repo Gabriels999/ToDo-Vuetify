@@ -16,7 +16,7 @@ export default {
   },
   methods: {
     salvaTask(event) {
-      tasksApi.postTask(event, () => this.$router.push("/"));
+      tasksApi.postTask(event, () => this.$router.push({ name: "home" }));
     },
   },
 };
